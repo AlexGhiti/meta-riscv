@@ -7,7 +7,7 @@ inherit kernel
 require recipes-kernel/linux/linux-yocto.inc
 
 SRC_URI = "\
-    git://git.kernel.org/pub/scm/linux/kernel/git/palmer/riscv-linux.git;branch=${BRANCH} \
+    git:///home/upmem/wip/linux/;branch=int/alex/riscv_hugetlbfs_v2_rebase_v5.2rc1 \
     file://pci.cfg \
 "
 
@@ -16,10 +16,9 @@ SRC_URI = "\
 SRC_URI_append_freedom-u540 = " file://defconfig \
                                 file://0001-risc-v-Fix-issue-ignoring-CONFIG_CMDLINE_OVERRIDE.patch \
                               "
-
 LINUX_VERSION_EXTENSION = "-riscv"
 
-PV = "${LINUX_VERSION}+git${SRCPV}"
+PV = "${LINUX_VERSION}+git"
 
 DEPENDS_append = " libgcc"
 
