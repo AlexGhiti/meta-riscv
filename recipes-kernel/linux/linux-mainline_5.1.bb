@@ -3,10 +3,10 @@ require recipes-kernel/linux/linux-mainline-common.inc
 LINUX_VERSION ?= "5.1.x"
 KERNEL_VERSION_SANITY_SKIP="1"
 
-BRANCH = "linux-5.1.y"
-SRCREV = "${AUTOREV}"
+BRANCH = "int/alex/riscv_hugetlbfs_v2_rebase_v5.2rc1"
+SRCREV = "506f47157556e993071f6764abde84b6211de3a3"
 SRC_URI = " \
-    git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git;branch=${BRANCH} \
+	git:///home/upmem/wip/linux/;branch=int/alex/riscv_hugetlbfs_v2_rebase_v5.2rc1 \
 "
 
 # Out of tree patches required for HiFive Unleashed

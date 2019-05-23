@@ -8,7 +8,7 @@ require recipes-kernel/linux/linux-yocto.inc
 
 LINUX_VERSION_EXTENSION = ""
 
-PV = "${LINUX_VERSION}+git${SRCPV}"
+PV = "${LINUX_VERSION}+git"
 
 DEPENDS_append = " libgcc"
 
