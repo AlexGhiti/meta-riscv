@@ -3,6 +3,10 @@ as the board currently only supports booting from a ramdisk image"
 
 # Do not pollute the initrd image with rootfs features
 IMAGE_FEATURES = ""
+ 
+#CORE_IMAGE_EXTRA_INSTALL += " python libhugetlbfs "
+#
+#IMAGE_INSTALL += " python libhugetlbfs"
 
 export IMAGE_BASENAME = "${MLPREFIX}riscv-initramfs-image"
 IMAGE_LINGUAS = ""
